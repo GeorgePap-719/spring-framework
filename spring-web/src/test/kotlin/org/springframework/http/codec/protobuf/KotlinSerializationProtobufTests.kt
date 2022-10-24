@@ -20,7 +20,7 @@ import java.io.UncheckedIOException
  * Tests for Protobuf using kotlinx.serialization.
  */
 @OptIn(ExperimentalSerializationApi::class)
-class KotlinSerializationProtobufEncoderTests :
+class KotlinxSerializationProtobufEncoderTests :
     AbstractEncoderTests<KotlinSerializationProtobufEncoder>(KotlinSerializationProtobufEncoder(protobuf)) {
     private val protobufMimeType = MimeType("application", "x-protobuf")
 

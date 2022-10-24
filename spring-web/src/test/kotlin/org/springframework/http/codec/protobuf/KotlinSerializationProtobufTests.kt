@@ -21,7 +21,7 @@ import java.io.UncheckedIOException
  */
 @OptIn(ExperimentalSerializationApi::class)
 class KotlinxSerializationProtobufEncoderTests :
-    AbstractEncoderTests<KotlinSerializationProtobufEncoder>(KotlinSerializationProtobufEncoder(protobuf)) {
+    AbstractEncoderTests<KotlinxSerializationProtobufEncoder>(KotlinxSerializationProtobufEncoder(protobuf)) {
     private val protobufMimeType = MimeType("application", "x-protobuf")
 
     @Test

@@ -35,7 +35,7 @@ import java.lang.reflect.Type
  * "application/octet-stream".
  */
 @ExperimentalSerializationApi
-class KotlinSerializationProtobufEncoder(
+class KotlinxSerializationProtobufEncoder(
     private val protobufSerializer: ProtoBuf = ProtoBuf
 ) : ProtobufCodecSupport(), HttpMessageEncoder<Any> {
     override fun canEncode(elementType: ResolvableType, mimeType: MimeType?): Boolean =
@@ -88,7 +88,7 @@ class KotlinSerializationProtobufEncoder(
  * "application/octet-stream".
  */
 @ExperimentalSerializationApi
-class KotlinSerializationProtobufDecoder(
+class KotlinxSerializationProtobufDecoder(
     private val protobufSerializer: ProtoBuf = ProtoBuf,
 ) : ProtobufCodecSupport(), Decoder<Any> {
     var maxMessageSize: Int = 256 * 1024 // default max size for aggregating messages
